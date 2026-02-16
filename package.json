@@ -4,7 +4,14 @@
   "description": "Simple Node.js server for sharedlinks",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "init-db": "node db/init.js"
   },
-  "license": "MIT"
+  "dependencies": {
+    "sqlite3": "^5.1.6"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^10.0.0"
+  }
 }
